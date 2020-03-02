@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  position: relative;
   background-color: grey;
   height: 70px;
   color: white;
@@ -23,21 +23,16 @@ header::after {
 
 #header-img {
   position: absolute;
-  top: 0;
+  top: -57px;
   left: 0;
   width: 200px;
   z-index: 1;
 }
 
 #about {
-  position: absolute;
-  visibility: visible;
   text-align: justify;
-  left: 20px;
-  top: 130px;
   min-width: 300px;
   max-width: 90%;
-  z-index: 200;
   font-size: calc(9px + 1vw);
 }
 .wrapper {
@@ -46,67 +41,28 @@ header::after {
 }
 #about-img {
   position: relative;
-  top: 260px;
-  left: 5px;
   width: 90%;
-  max-width: 1000;
+  max-width: 1000px;
   height: auto;
 }
 
-/*#descriptions {
+#descriptions {
   position: relative;
-  font-size: calc(9px + 1vw)
+  font-size: calc(9px + 1vw);
   width: 100%;
-}*/
-
-#new-releases {
-  position: fixed;
-  visibility: visible;
-  left: 20px;
-  top: 280px;
-  height: 100px;
-  width: 150px;
-  /*border-style: solid;
-  border-color: white;
-  border-radius: 5px;
-  box-sizing: border-box;*/
-}
-
-#coming-soon {
-  position: fixed;
-  visibility: visible;
-  left: 200px;
-  top: 280px;
-  height: 100px;
-  width: 150px;
-}
-
-#bargin-bin {
-  position: fixed;
-  visibility: visible;
-  left: 400px;
-  top: 280px;
-  height: 100px;
-  width: 150px;
-}
-
-#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 #video {
   position: relative;
-  top: 850px;
 }
 
 #video-caption {
   position: relative;
-  top: 1170px;
 }
 
-#form {
-  position: absolute;
-  top: 1250px;
-}
 nav ul {
   float: right;
   margin-right: 2em;
