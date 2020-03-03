@@ -1,14 +1,18 @@
 header {
   position: relative;
-  background-color: grey;
+  top: 0;
+  left: 0;
+  background-color: lightskyblue;
   height: 70px;
   color: white;
   font-family: "Exo 2", sans-serif;
   width: 100%;
+  z-index: 0;
 }
 
 body {
   background-color: midnightblue;
+  text-align: center;
 }
 
 p {
@@ -30,9 +34,7 @@ header::after {
 }
 
 #about {
-  text-align: justify;
   min-width: 300px;
-  max-width: 90%;
   font-size: calc(9px + 1vw);
 }
 .wrapper {
@@ -42,25 +44,48 @@ header::after {
 #about-img {
   position: relative;
   width: 90%;
-  max-width: 1000px;
   height: auto;
 }
 
 #descriptions {
   position: relative;
   font-size: calc(9px + 1vw);
-  width: 100%;
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
+#new-releases {
+  border-style: solid;
+  border: solid 2px lightskyblue;
+  border-width: thick;
+  border-radius: 5px;
+
+}
+
+#coming-soon {
+  border-style: solid;
+  border: solid 2px lightskyblue;
+  border-width: thick;
+  border-radius: 5px;
+}
+
+#bargin-bin {
+  border-style: solid;
+  border: solid 2px lightskyblue;
+  border-width: thick;
+  border-radius: 5px;
+}
+
 #video {
   position: relative;
+  
 }
 
 #video-caption {
   position: relative;
+  font-size: calc(8px + 1vw);
 }
 
 nav ul {
